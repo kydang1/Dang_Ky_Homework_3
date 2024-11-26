@@ -1,0 +1,89 @@
+.hidden{
+    display: none;
+}
+body{
+    background-color: rgb(36, 36, 36);
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-image: url(../images/FanshaweBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header{
+    background-color: rgb(35, 35, 35);
+    margin: 0 auto;
+}
+header > h1{
+    text-align: center;
+    padding: 10px;
+}
+section{
+    width:400px;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin: 10px;
+}
+section h2{
+    color:red;
+    padding: 5px 10px;
+    text-align: center;
+}
+section:first-of-type{
+    border: 4px solid rgb(255, 98, 98);
+}
+#inprog{
+    border: 4px solid rgb(0, 224, 227);
+}
+#inprog h2{
+    color: rgb(19, 224, 255);
+}
+#done{
+    border: 4px solid green;
+}
+#done h2{
+    color: green;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    padding: 6px 8px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+input[type="checkbox"]:checked+span{
+    color: #20b320;
+}
+input[type="checkbox"]:checked+span::after {
+    content: '\2713';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid #20b320;
+    font-size: 12px;
+    top: 5px;
+    right: 18px;
+    margin-left: 4px;
+    animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
